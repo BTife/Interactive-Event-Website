@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cloud Engineering Bootcamp 2026</title>
+        <link rel="icon" href="img/cloud-computing.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+    
+        <!-- navbar
+
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [ ] Project 4 (REQUIRED FEATURE)
+        - [ ] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#links">Links</a></li>
+                 <li><button id="theme-button">Toggle Dark Mode</button></li>
+
+            </ul>
+        </div>  
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+    <section class="hero">
+        <img src="img/cloud-computing.png" alt="Cloud Engineering Bootcamp logo" class="hero-image">
+
+        <div class="hero-text">
+            <h1>Cloud Engineering Bootcamp 2026</h1>
+            <h2>Design. Deploy. Scale.</h2>
+
+            <div class="hero-buttons">
+                <button>Join the Bootcamp</button>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>    
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="about" class="about-title">About the Event</h2>
+
+        <div class="about-container">
+            <iframe width="650" height="250"
+             src="https://www.youtube.com/embed/videoseries?si=h0edtcdWhIE3sn6R&amp;list=PLEiEAq2VkUUIJ3o1tehvtux0_Ynf42CBN"
+             title="YouTube video player">
+            </iframe>        
+        
+        <p class="about-text">
+            The Cloud Engineering Bootcamp 2026 is a hands-on event designed to introduce students to real-world cloud computing concepts and tools. Participants will learn how to design, build, and deploy scalable applications using cloud services such as AWS. The event is intended for Computer Science and IT students, especially those interested in becoming cloud engineers or learning more about modern infrastructure. No prior cloud experience is required, making it accessible to beginners while still valuable for those with some technical background.
+        </p>
+        </div>
+    <div class="main-content">
+    <section class="expect">
+        <h2>What To Expect</h2>
+        <h3>Hands-On Learning, Real-World Cloud Experience</h3>
+        <ul>
+            <li><b>Build Real Projects:</b> Deploy applications using AWS, Docker, and cloud tools.</li>
+            <li><b>Collaborative Learning:</b> Work with peers on team-based projects and problem-solving.</li>
+            <li><b>Guided Support:</b> Get help from instructors and mentors throughout the program.</li>
+            <li><b>Career Preparation:</b> Gain skills needed for entry-level cloud engineering roles.</li>
+        </ul>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h1 id="schedule">Event Schedule</h1>
+
+        <p><strong>Start Date:</strong> June 1, 2026</p>
+        <p><strong>End Date:</strong> August 21, 2026</p>
+        <p><strong>Class Times:</strong> Tuesdays & Thursdays, 6:00 PM – 8:00 PM</p>
+        <p><strong>Weekend Labs:</strong> Saturdays, 11:00 AM – 1:00 PM</p>
+
+        <img alt="Students working on laptops during a coding workshop" src="./img/picture1.png" width="250" height="300"/>
+
+        <h3>Week 1–2: Cloud Basics</h3>
+        <p>Introduction to cloud computing, networking basics, service models (IaaS, PaaS, SaaS),  
+        and understanding how cloud systems work.
+        </p>
+            
+        <img alt="Cloud computing diagram showing connected devices, services, and cloud types" src="./img/picture3.png" width="300"/>
+
+        <h3>Week 3–5: AWS + Azure</h3>
+        <p>Hands-on learning with AWS and Microsoft Azure, including storage, virtual machines,
+        IAM, and cloud deployment tools.
+        </p>
+
+        <h3>Week 6–8: DevOps</h3>
+        <p>Learn GitHub, Docker, CI/CD pipelines, automation, and team collaboration workflows.
+        </p>
+
+        <h3>Week 9–12: Final Project</h3>
+        <p>Build and deploy a real cloud-based application, then present your project portfolio.
+        </p>
+        <!-- rsvp
+
+        Purpose:
+        - Section for users to sign up for the event
+        - Contains a form for users to input their information, and a list of other users who have signed up
+
+        When To Modify:
+        - [ ] Project 6 (REQUIRED FEATURE) 
+        - [ ] Project 6 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+        <div id="rsvp">
+            <h2>RSVP</h2>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <p>
+                        Join the Cloud Engineering Bootcamp 2026 and reserve your spot today! 
+                        Connect with other learners, gain hands-on cloud experience, and start 
+                        building the skills needed for a career in cloud engineering.
+                    </p>
+                </div>
+                <div class="participants">
+                    <p>☁️ Sarah, future DevOps engineer, has RSVP'd.</p>
+                    <p>☁️ Maya, aspiring Cloud Engineer, has RSVP'd.</p>
+                    <p>☁️ Daniel, AWS learner, has RSVP'd.</p>
+                    <p id="rsvp-count">⭐ 3 people have RSVP'd to this event!</p>
+                </div>
+            </div>
+
+            <!--- Sign RSVP Form --->
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form" class="rsvp-form">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">Area of Interest:</label>
+                        <input type="text" id="interest" name="interest" placeholder="AWS / DevOps">
+                    </div>
+                    <button id="submit-rsvp" type="submit">Submit RSVP</button>
+                </form>
+                <!-- Submit button -->
+            </div>      
+        </div>
+        <!-- success modal
+
+        Purpose:
+        - Modal that appears when a user successfully signs up for the event
+        - Contains a personalized message and image
+
+        When To Modify:
+        - [ ] Project 9 (REQUIRED FEATURE)
+        - [ ] Project 9 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <div class="modal-item">
+                    <p id="modal-text">Thanks for RSVPing!</p>
+                    <button id="close-modal">Close</button>
+                </div>
+
+                <div class="modal-item">
+                    <img src="img/_.webp" alt="Congratulatory image">
+                </div>
+            </div>
+        </div>
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="links">Links</h2>
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="block" href="https://aws.amazon.com/what-is-cloud-computing/">
+            <article>
+                <h3>Intro to Cloud Computing</h3>
+                <p>This article explains the basics of cloud computing and how it is used in real-world applications.</p>
+            </article>
+        </a>
+
+        <a class="block" href="https://aws.amazon.com/websites/">
+            <article>
+                <h3>How AWS Powers Modern Websites</h3>
+                <p>This resource shows how AWS services like S3 and CloudFront are used to host scalable websites.</p>
+            </article>
+        </a>
+            
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+    </div>
+    <script src="index.js"></script>        
+    </body>
+</html>
